@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>meshlab</id>
-    <version>2020.07</version>
+    <version>2021.05</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/meshlab</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>MeshLab (Install)</title>
-    <authors>ISTI-CNR</authors>
+    <authors>Paolo Cignoni, ISTI</authors>
     <projectUrl>http://www.meshlab.net/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/a50126ba/icons/meshlab.png</iconUrl>
-    <copyright>2016 ISTI-CNR</copyright>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/2cd7d7454f4f7ae7d740afc060ad9b059d5c8c1d/icons/meshlab.png</iconUrl>
+    <copyright>Copyright(C) 2005-2018</copyright>
     <licenseUrl>https://github.com/cnr-isti-vclab/meshlab/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/cnr-isti-vclab/meshlab</projectSourceUrl>
@@ -18,74 +18,71 @@
     <bugTrackerUrl>https://github.com/cnr-isti-vclab/meshlab/issues</bugTrackerUrl>
     <tags>meshlab admin foss 3d mesh render texturing printing</tags>
     <summary>the open source system for processing and editing 3D triangular meshes.</summary>
-    <description>
+    <description><![CDATA[# MeshLab
 
-MeshLab: the open source system for processing and editing 3D triangular meshes.
-It provides a set of tools for editing, cleaning, healing, inspecting, rendering, texturing and converting meshes. It offers features for processing raw data produced by 3D digitization tools/devices and for preparing models for 3D printing.
+MeshLab is an open source, portable, and extensible system for the processing and editing of unstructured large 3D triangular meshes. It is aimed to help the processing of the typical not-so-small unstructured models arising in 3D scanning, providing a set of tools for editing, cleaning, healing, inspecting, rendering and converting this kind of meshes. These tools include MeshLab proper, a versatile program with a graphical user interface, and [meshlabserver](https://github.com/cnr-isti-vclab/meshlab/blob/master/src/meshlabserver/README.md), a program that can perform mesh processing tasks in batch mode, without a GUI.
 
-## Features
+MeshLab is mostly based on the open source C++ mesh processing library [VCGlib](http://www.vcglib.net) developed at the [Visual Computing Lab](http://vcg.isti.cnr.it) of [ISTI - CNR](http://www.isti.cnr.it). VCG can be used as a stand-alone large-scale automated mesh processing pipeline, while MeshLab makes it easy to experiment with its algorithms interactively.
 
-### 3D Acquisition: Aligning
+MeshLab is available for Windows, MacOS, and Linux.
 
-The 3D data alignment phase (also known as registration) is a fundamental step in the pipeline for processing 3D scanned data. MeshLab provides a powerful tool for moving the different meshes into a common reference system, able to manage large set of range-maps.
+# License
 
-### 3D Acquisition: Reconstruction
+ The Meshlab source is released under the [GPL License](LICENSE.txt).
 
-The process of transforming independent acquisitions, or point clouds, into a single-surface triangulated mesh can be fulfilled with different algorithmic approaches. MeshLab provides several solutions to reconstruct the shape of an object, ranging from volumetric (Marching Cube) to implicit surfaces (Screened Poisson).
+# Copyright
 
-### 3D Acquisition: Color Mapping and Texturing
+```
+   MeshLab
+   http://www.meshlab.net
+   All rights reserved.
 
-MeshLab contains a pipeline for the alignment and projection of color information (from a set of uncalibrated images) onto a 3D model. Several automatic and assisted methods are provided to obtain a high quality color encoding, with both per-vertex or texture mapping.
+   VCGLib  http://www.vcglib.net                                     o o
+   Visual and Computer Graphics Library                            o     o
+                                                                  _   O  _
+   Paolo Cignoni                                                    \/)\/
+   Visual Computing Lab  http://vcg.isti.cnr.it                    /\/|
+   ISTI - Italian National Research Council                           |
+   Copyright(C) 2005-2018                                             \
+```
 
-### Cleaning 3D Models
+# References
 
-MeshLab offers a series of automatic, semi-manual and interactive filters to remove those geometric element generally considered “wrong” by most software and algorithms. It is possible to removing topological errors, duplicated and unreferenced vertices, small components, degenerated or intersecting faces, and many more geometrical and topological singularities. Using different automatic and interactive selection methods, is then possible to isolate and remove unwanted areas of your meshes and point clouds.
+Please, when using this tool, cite the references listed in the official web page https://www.meshlab.net/#references according to you needs, or if you are lazy just cite:
 
-### Scaling, Positioning and Orienting
+Meshlab: an open-source mesh processing tool. P. Cignoni, M. Callieri, M. Corsini, M. Dellepiane, F. Ganovelli, G. Ranzuglia
+Proceedings of the 2008 Eurographics Italian Chapter Conference, ISBN: 978-3-905673-68-5, pp. 129-136, DOI: 10.2312/LocalChapterEvents/ItalChap/ItalianChapConf2008/129-136
 
-MeshLab provides a variety of features to manipulate the scale, positioning and orientation of a 3D model, including basic transformation operations like translation/scaling/rotation, automatic re-centering and alignment to axis, geo-referencing with reference points, interactive manipulators for rotation/translation/scaling, and many others.
+BibTeX format:
 
-### Simplification, Refinement and Remeshing
+```
+@inproceedings {LocalChapterEvents:ItalChap:ItalianChapConf2008:129-136,
+booktitle = {Eurographics Italian Chapter Conference},
+editor = {Vittorio Scarano and Rosario De Chiara and Ugo Erra},
+title = {{MeshLab: an Open-Source Mesh Processing Tool}},
+author = {Cignoni, Paolo and Callieri, Marco and Corsini, Massimiliano and Dellepiane, Matteo and Ganovelli, Fabio and Ranzuglia, Guido},
+year = {2008},
+publisher = {The Eurographics Association},
+ISBN = {978-3-905673-68-5},
+DOI = {10.2312/LocalChapterEvents/ItalChap/ItalianChapConf2008/129-136}
+}
+```
 
-MeshLab also provides different subdivision schemes, remeshing and resampling filters to increase geometric complexity of 3D models, or to optimize point distribution and triangulation quality.
+# Contacts
 
-### Measurement, and Analysis
+ - Paolo Cignoni (paolo.cignoni (at) isti.cnr.it)
+ - Alessandro Muntoni (alessandro.muntoni (at) isti.cnr.it)
 
-Interactive point-to-point measurement of a 3D model is really easy in MeshLab. Moreover, automatic filters will return various geometric and topological information about your 3D model (or just of a selected area), while the Sectioning tool can export cut-through sections of a mesh as polylines.
+# Feedback
 
-### Visualization and Presentation
+For documented and repeatable bugs, feature requests, etc., please use the [GitHub issues](https://github.com/cnr-isti-vclab/meshlab/issues).
 
-The visualization features of MeshLab (including Decorators and Shaders) can help in graphically present the peculiar characteristics of a 3D model.
-
-### Color Processing
-
-MeshLab can manipulate the vertex and face colors using a series of photoshop-like filters (gamma, saturation, brightness, contrast, levels, smoothing, sharpening). 
-
-### 3D Printing: Offsetting, Hollowing, Closing
-
-Beside being able to export to STL (one of the most common formats for 3D printing), MeshLab can be used to prepare 3D models for printing by creating inner shells, resampling/remeshing the 3D model to make slicing easier, closing small holes to obtain watertight meshes, and flattening the bottom area to have a better platform adherence.
-
-### Comparing Models
-
-MeshLab offers now much more advanced functionalities for comparing two meshes, that also compute signed distance and may work on point clouds.
-
-### 3D Models Conversion and Interchange
-
-MeshLab can import and export a number of different 3D data formats and to online services like SketchFab.
-
-### Raster Layers: Integration with Images
-
-MeshLab users can import in a project images and other 2D entities.
-
-    </description>
-    <releaseNotes>
-* [News](http://www.meshlab.net/#news)
-    </releaseNotes>
-    <dependencies>
-      <dependency id="vcredist2015" version="14.0.24215" />
-    </dependencies>
+For general questions use [StackOverflow](http://stackoverflow.com/questions/tagged/meshlab).
+]]></description>
+    <releaseNotes>https://github.com/cnr-isti-vclab/meshlab/releases/tag/Meshlab-2021.05</releaseNotes>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>

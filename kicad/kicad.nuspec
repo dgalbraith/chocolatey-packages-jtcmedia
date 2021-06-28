@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kicad</id>
-    <version>5.1.6.10</version>
+    <version>5.1.10.1</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/kicad</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>KiCad (Install)</title>
@@ -32,7 +32,7 @@ KiCad includes a 3D viewer which you can use to inspect your design in an intera
 
     </description>
   <releaseNotes>
-* [Announcements](http://kicad-pcb.org/post/)  
+[https://kicad-pcb.org/blog/categories/Release-Notes/](https://kicad-pcb.org/blog/categories/Release-Notes/)
   </releaseNotes>
   </metadata>
   <files>

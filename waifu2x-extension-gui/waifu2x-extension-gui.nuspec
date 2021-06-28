@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>waifu2x-extension-gui</id>
+    <version>3.52.11</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/waifu2x-extension-gui</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>Waifu2x-Extension-GUI</title>
+    <authors>Aaron Feng</authors>
+    <projectUrl>https://github.com/AaronFeng753/Waifu2x-Extension-GUI</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/2a0d9da44feeea8564cc205263b0bbe85c523a56/icons/waifu2x-extension-gui.png</iconUrl>
+    <copyright>2020 Aaron Feng</copyright>
+    <licenseUrl>https://github.com/AaronFeng753/Waifu2x-Extension-GUI/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/AaronFeng753/Waifu2x-Extension-GUI</projectSourceUrl>
+    <docsUrl>https://github.com/AaronFeng753/Waifu2x-Extension-GUI/wiki/English-Catalog</docsUrl>
+    <bugTrackerUrl>https://github.com/AaronFeng753/Waifu2x-Extension-GUI/issues</bugTrackerUrl>
+    <tags>waifu2x-extension-gui upscaler image gif video super-resolution waifu2x srmd realsr anime4k acnet</tags>
+    <summary>Image, GIF and Video enlarger/upscaler(super-resolution) achieved with Waifu2x, SRMD, RealSR, Anime4K and ACNet.</summary>
+    <description><![CDATA[# Waifu2x-Extension-GUI
+
+### Photo/Video/GIF enlargement using machine learning
+
+# What is Waifu2x-Extension-GUI?
+
+### `Image` & `GIF` & `Video` Super-Resolution using Deep Convolutional Neural Networks.
+
+### ✨Key features:
+- #### 📺Multimedia support: Supports processing Image & GIF & Video at the same time.
+- #### 😍Full image style support: Multiple built-in algorithms, 2D anime, or your daily photos & videos, this software can handle all of them.
+- #### ✅Great compatibility: Multiple built-in engines, compatible with almost all modern Windows PCs.
+- 📊Flexible multi-thread setting: You can adjust the number of threads freely while providing a complete set of settings for each engine, Take advantage of all the capabilities of your PC.
+- 🚀🚀🚀Multi-GPU support: Multi-GPU support for ALL built-in engines.
+- 🛠Numerous customizable settings: You can automate your workflow by adjusting the many customizable settings in the software.
+- 🤖Smart settings: This software can automatically adjust some software settings based on your PC hardware information and the information of the files you want to process.
+- 😉Easy-to-use graphical user interface.
+- 📨Continual maintenance and updates.
+
+```
+Built-in image processing algorithms:
+Waifu2x / SRMD / RealSR / Anime4K / ACNet
+
+Built-in image processing engines:
+Waifu2x-caffe / Waifu2x-converter / Waifu2x-ncnn-vulkan / SRMD-ncnn-vulkan / RealSR-ncnn-vulkan / Anime4KCPP
+```
+
+#### ✅Already been tested on the `AMD` RX 550, `NVIDIA` GeForce GTX 1070 and `Intel` UHD 620.
+
+### Samples👀
+
+**`Image`** : https://github.com/AaronFeng753/Waifu2x-Extension-GUI/tree/master/Samples/image
+
+**`Video`** : https://github.com/AaronFeng753/Waifu2x-Extension-GUI/tree/master/Samples/video
+
+**`GIF`** : https://github.com/AaronFeng753/Waifu2x-Extension-GUI/tree/master/Samples/gif
+
+#### `Github doesn't support online video playback, please check link below:`
+**`Video`** : https://github.com/AaronFeng753/Waifu2x-Extension-GUI/tree/master/Samples/video
+
+Waifu2x-Extension-GUI is licensed under the [🔗GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
+
+### Privacy policy🙈🙉🙊
+
+We respect your privacy, so the following is the privacy policy of this software:
+```
+1. This software won't upload anything to the internet, so we won't collect any data from you, we don't even have a server.
+
+2. This software will only connect to the internet when checking for new updates and update the QRCode on the Donate tab, which
+will download two .ini files and two .jpg files from GitHub and Gitee. (Gitee is a copycat version of GitHub in The
+People's Republic of China, you can disable downloading anything from Gitee by enabling [Ban Gitee] in [Additional settings])
+
+In conclusion, we won't collect any data from you. If you don't trust us, you can read the source code yourself or stop using this software.
+```
+
+## Package Parameters
+
+The following package parameters can be set:
+
+- `/NOICON` - Do not install a Desktop Icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+]]></description>
+    <releaseNotes>https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/tag/v3.52.11</releaseNotes>
+    <dependencies>
+      <dependency id="megatools" version="1.11.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

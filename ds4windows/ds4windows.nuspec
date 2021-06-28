@@ -3,47 +3,72 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ds4windows</id>
-    <version>2.1.4</version>
+    <version>3.0.10</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/ds4windows</packageSourceUrl>
-    <owners>LudicrousByte</owners>
+    <owners>jtcmedia</owners>
     <title>DS4Windows</title>
     <authors>Travis Nickles, Jays2Kings</authors>
     <projectUrl>https://github.com/Ryochan7/DS4Windows</projectUrl>
     <copyright>Copyright (c) 2019 Travis Nickles</copyright>
     <licenseUrl>https://github.com/Ryochan7/DS4Windows/blob/jay/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/ds4windows-icon/icons/ds4windows.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/af4e67282ffe71a9bb9f9d3a8af87d028eb57e0a/icons/ds4windows.png</iconUrl>
     <docsUrl>http://ds4windows.com/</docsUrl>
     <bugTrackerUrl>https://github.com/Ryochan7/DS4Windows/issues</bugTrackerUrl>
     <tags>ds4windows ps4 dualshock controller emulator foss</tags>
     <summary>DS4Windows is a portable program that allows you to get the best experience while using a DualShock 4 on your PC. By emulating a Xbox 360 controller, many more games are accessible.</summary>
-    <description>
-    
-### Simple and Clean UI
+    <description><![CDATA[# DS4Windows
 
-Since the idea is to get to get your controller ready for games, The UI was made to make to be quick to pick up. Once first launched, the tool takes your through the setup, gives you a default profile and you're ready to go, or if you choose you can change things to your heart's content.
+Like those other DS4 tools, but sexier.
 
-### Profile System
+DS4Windows is an extract anywhere program that allows you to get the best
+DualShock 4 experience on your PC. By emulating an Xbox 360 controller, many
+more games are accessible. Other input controllers are also supported including the
+DualSense, Switch Pro, and JoyCon controllers (**first party hardware only**).
 
-With profiles, it makes it easier to quickly swap through various settings for your controller. You can set up controls for certain games, or set the lightbar to your favorite color. You can even swipe two fingers along the touchpad to swap profiles without the need to even open back the program.
+This project is a fork of the work of Jays2Kings. You can find the old project
+website at [ds4windows.com](http://ds4windows.com).
 
-### Automatic Profiles
+![DS4Windows Preview](https://raw.githubusercontent.com/Ryochan7/DS4Windows/jay/ds4winwpf_screen_20200412.png)
 
-Along with switching profiles manually, you can also switch your controllers to different profiles automatically when certain programs are launched.
+## Requirements
 
-### Tons of options
+- Windows 10 or newer (Thanks Microsoft)
+- [Microsoft .NET 5.0 or higher](https://dotnet.microsoft.com/download/dotnet/5.0/runtime)
+- Visual C++ 2015-2019 Redistributable. [x64](https://aka.ms/vs/16/release/vc_redist.x64.exe) or [x86](https://aka.ms/vs/16/release/vc_redist.x86.exe)
+- [ViGEmBus](https://vigem.org/) driver (DS4Windows will install it for you)
+- Microsoft 360 Driver (link inside DS4Windows, already installed by Windows if
+you've used a 360 controller before)
+- **Sony** DualShock 4 or other supported controller
+- Connection method:
+  - Micro USB cable
+  - [Sony Wireless Adapter](https://www.amazon.com/gp/product/B01KYVLKG2)
+  - Bluetooth 4.0 (via an
+[adapter like this](https://www.newegg.com/Product/Product.aspx?Item=N82E16833166126)
+or built in pc). Only use of Microsoft BT stack is supported. CSR BT stack is
+confirmed to not work with the DS4 even though some CSR adapters work fine
+using Microsoft BT stack. Toshiba's adapters currently do not work. 
+*Disabling 'Enable output data' in the controller profile settings might help with latency issues, but will disable lightbar and rumble support.*
+- Disable **PlayStation Configuration Support** and
+**Xbox Configuration Support** options in Steam
 
-From control mapping, to touchpad sensitivity, to marcos, to rainbow lightbar, to motion controls, to special actions triggerd by pressing multiple actions, to launching a program with profiles, there are plenty of settings to play around with.
+## Social
 
-    </description>
-    <releaseNotes>
-* [Release Notes](https://github.com/Ryochan7/DS4Windows/releases)    
-    </releaseNotes>
+[Twitter @ds4windows](https://twitter.com/ds4windows)  
+[YouTube](https://www.youtube.com/channel/UCIoUA_XLlCSZbvZGeg3Byeg)  
+[BitChute](https://www.bitchute.com/channel/uE2CbiV96u1k/)  
+[BitTube.tv](https://bittube.tv/profile/ds4windows)  
+[Mastodon @ds4windows@fosstodon.org](https://fosstodon.org/@ds4windows)  
+[Minds @ds4windows](https://www.minds.com/ds4windows/)
+]]></description>
+    <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/v3.0.10</releaseNotes>
     <dependencies>
-      <dependency id="dotnet4.5" version="4.5.20120822" />
+      <dependency id="dotnet-5.0-desktopruntime" version="5.0.4" />
+      <dependency id="vcredist140" version="14.28.29913" />
     </dependencies>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>

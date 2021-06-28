@@ -1,0 +1,24 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the installer:
+
+    x32: https://nodejs.org/dist/latest-v12.x/node-v12.22.1-x86.msi
+    x64: https://nodejs.org/dist/latest-v12.x/node-v12.22.1-x64.msi
+
+2.  Download Checksums:
+    
+    SHASUMS: https://nodejs.org/dist/latest-v12.x/SHASUMS256.txt.asc
+
+    OR 
+    
+    You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://nodejs.org/dist/latest-v12.x/node-v12.22.1-x64.msi
+    
+    
+    checksum32: 8192400D6FC7083B8BF049613C046923E8C24DD913A18189BE9FE77BE4C1C8C4
+    checksum64: 02F53B3530A0310B1076DB801770803527C63F724B56C22D6A0625C12A03C982
